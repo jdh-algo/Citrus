@@ -1,0 +1,12 @@
+{
+    "mode": "data_label",
+    "task_name": "data label",
+    "l_data": ["medqa_train_small"],
+    "stid": "single_task_data_labeling",
+    "n_processor": 8,
+    "n_save": 8,
+    "n_retry": 3,
+    "flag_force": true,
+    "flag_ignore_fail": false,
+    "verbose": 1
+}

@@ -1,0 +1,20 @@
+stid: "single_task_evaluation"
+single_task_class: "SingleTaskEvaluation"
+
+nodes:
+- nid: "node_one_prompt_citrus_pro"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: ""
+  prompt: "citrus_pro_inference.prompt"
+  prefix: "citrus_pro_inference_prefix.prompt"
+- nid: "node_one_prompt_llm_model"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: ""
+  prompt: "llm_inference.prompt"
+- nid: "node_one_prompt_answer_check"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "yanxi-10B-postprocess"
+  prompt: "llm_inference_answer_check.prompt"

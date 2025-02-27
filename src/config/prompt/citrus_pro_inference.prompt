@@ -1,0 +1,16 @@
+You are tasked with addressing a medical examination question. Please carefully read the question, provide a detailed thought process, and then present your final answer.
+Here is the question:
+<Question>
+{Q}
+{OPS}
+</Question>
+
+Please begin your response.
+
+The formatted output should be as follows:
+<think>
+[Insert Your Detailed Thought Process here]
+</think>
+<answer>
+[Insert Your Final Answer here]
+</answer>

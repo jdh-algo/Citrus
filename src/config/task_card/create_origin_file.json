@@ -1,0 +1,21 @@
+{
+    "mode": "create_origin_file",
+    "task_name": "create_origin_file",
+    "l_data": [
+        "medqa",
+        "medqa_train_small",
+        "pubmedqa",
+        "mmlu-anatomy",
+        "mmlu-clinical_knowledge",
+        "mmlu-college_biology",
+        "mmlu-college_medicine",
+        "mmlu-medical_genetics",
+        "mmlu-professional_medicine",
+        "jmed",
+        "care_qa",
+        "medbullets_op4",
+        "medbullets_op5",
+        "mmlu-pro_health",
+        "mmlu-pro_biology"
+    ]
+}

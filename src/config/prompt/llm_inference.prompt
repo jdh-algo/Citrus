@@ -1,0 +1,11 @@
+You are tasked with addressing a medical examination question. Please carefully read the question and present your final answer.
+<Question>
+{Q}
+{OPS}
+</Question>
+
+The formatted output should be as follows:
+<answer>
+[Insert Your Final Choice (only one uppercase letter) here]
+</answer>
+Final answer:

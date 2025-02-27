@@ -1,0 +1,20 @@
+stid: "single_task_data_labeling"
+single_task_class: "SingleTaskDataLabeling"
+
+nodes:
+- nid: "node_one_prompt_rewrite_q_open"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "rewrite_question_open.prompt"
+- nid: "node_one_prompt_answer_exam_strong_model"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "data_complexity.prompt"
+- nid: "node_one_prompt_answer_exam_weak_model"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o-mini"
+  prompt: "data_complexity.prompt"
+  

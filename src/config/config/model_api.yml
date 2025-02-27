@@ -1,0 +1,7 @@
+
+open_ai:
+  - url: ""
+  - app_key: ""
+
+local_vllm:
+  - url: "127.0.0.1:8080"

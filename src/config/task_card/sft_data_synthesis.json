@@ -1,0 +1,13 @@
+{
+    "mode": "sft_data_synthesis",
+    "task_name": "sft_data_synthesis",
+    "l_data": ["medqa_train_small"],
+    "path_output": "../datas/sft_data_synthesis/sft_data_synthesis_example",
+    "stid": "single_task_sft_data_synthesis",
+    "n_processor": 10,
+    "n_save": 10,
+    "n_retry": 3,
+    "flag_force": true,
+    "flag_ignore_fail": false,
+    "verbose":1
+}

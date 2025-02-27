@@ -1,0 +1,98 @@
+You are a human assistant specializing in generating clear, well-structured technical responses. Below is a list of transitional phrases grouped by their function. Your goal is to use these transitions to re-structure raw answer in a way that enhances clarity, reasoning, and logical flow. After the list, an example application demonstrates how to use these transitions in a problem-solving context.
+Begin with an introduction explaining that the list of transitions is designed to improve clarity and flow in technical explanations.
+Follow this by introducing the example, explicitly stating that the goal is to apply these transitions in a technical scenario.
+Ensure that the example weaves these transitions naturally into the explanation of the problem and solution.
+Clarification and Simplification 
+"In other words": Offers a simpler or clearer restatement. 
+"That is": Further clarifies the point. 
+"To put it differently": Restates the idea in another way. 
+"What this means is": Expands on the concept for better understanding. 
+"Simply put": Condenses the idea to its most straightforward form. 
+"In short": Summarizes a concept briefly.
+
+Cause and Effect 
+"Because": Indicates a reason. 
+"As a result": Connects a cause to its effect. 
+"Therefore": Introduces a logical conclusion. 
+"Thus": Summarizes a resulting point or outcome. 
+"Hence": Indicates a consequence. 
+"Consequently": Shows the effect of a previous statement.
+
+Addition and Continuation 
+"Additionally": Adds a related point or further detail. 
+"Moreover": Reinforces the previous idea with an additional point.
+"Furthermore": Offers more supporting information. 
+"Also": Adds another point to the discussion. 
+"Along with": Introduces something that complements the prior point. 
+"What's more": Brings attention to a significant additional detail. 
+"As well": Highlights a related point.
+
+Contrast and Comparison 
+"However": Introduces a contrasting idea or an exception. 
+"But maybe": Suggests an alternative explanation. 
+"Alternatively": Proposes another option or viewpoint. 
+"On the other hand": Presents an opposing idea or consideration. 
+"In contrast": Highlights a difference. 
+"Conversely": Introduces an opposite or reverse perspective. 
+"Still": Maintains a point despite contrasting information.
+
+Sequential and Temporal Flow 
+"First": Marks the first step or point in a sequence. 
+"Next": Indicates the following step. 
+"Then": Follows up with the next action or idea. 
+"After": Refers to what happens later. 
+"Subsequently": Suggests a later step in the process. 
+"Finally": Introduces the last point or step. 
+"Before": Indicates a prerequisite action. 
+"Later": Refers to a future action or event. 
+"Meanwhile": Describes something happening concurrently.
+
+Tentative Reasoning 
+"Maybe": Suggests a possible explanation or hypothesis. 
+"Possibly": Indicates a tentative but plausible idea. 
+"It could be that": Suggests a potential scenario.
+"Perhaps": Introduces a suggestion without certainty. 
+"So I think": Expresses a tentative conclusion. 
+"It seems that": Offers a reasoned assumption.
+
+Concluding and Summarizing 
+"So": Summarizes the reasoning or draws a conclusion. 
+"In conclusion": Signals the final thought or summary. 
+"To summarize": Briefly reviews key points. 
+"In summary": Provides a concise restatement of the main ideas. 
+"To conclude": Marks the end of the discussion or reasoning. 
+"All in all": Wraps up the overall argument or thought process.
+
+Problem-Solving Transitions 
+"To fix this": Introduces a proposed solution. 
+"In order to": Explains the purpose of the action. 
+"The next step is": Suggests the next action to solve the problem. 
+"To address this": Signals an action aimed at resolving the issue. 
+"To prevent this": Recommends actions to avoid future problems. 
+"To avoid this": Suggests preventative steps.
+
+Emphasizing Important Points 
+"Importantly": Highlights a crucial aspect of the reasoning. 
+"Notably": Draws attention to a significant detail. 
+"Crucially": Emphasizes a pivotal point. 
+"Significantly": Underscores something relevant or impactful. 
+"Key to this": Marks a central or essential factor. 
+"Most importantly": Calls attention to the primary or critical point.
+
+Redirecting or Reevaluating Thought 
+"Wait": Signals a pause to reconsider an earlier assumption. 
+"Hold on": Indicates a momentary shift in direction. 
+"On second thought": Introduces a revision or change in perspective. 
+"Let’s reconsider": Suggests revisiting an earlier idea for further analysis.
+
+Please read and re-structure the raw answer below. And rewrite the content to more narrative language, without too much output structure. Give more descriptive reasoning content similar to self-talk.
+{raw_answer}
+You should ONLY output the raw answer part after re-structure,don't describe your task, and Stop when conclusion is made. Do NOT miss any information in the raw answer. Use narrative language.
+Since you have the ground truth of this question: 
+<ground truth>
+{GT}
+</ground truth>
+Please rethink your answer to this question with knowing the ground truth.Keep the answer text scale in your answer. 
+Enclose your very final conclusion in <answer></answer> tags.
+Remember, pretending you don't know the ground truth but naturally say it out in the <answer> </answer> tags.
+Now start your rewrite:

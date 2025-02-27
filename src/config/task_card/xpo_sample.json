@@ -1,0 +1,14 @@
+{
+    "mode": "xpo_sample",
+    "task_name": "xpo_sample",
+    "l_data": ["medqa_train_small"],
+    "path_output": "../datas/xpo_sample/xpo_sample_example",
+    "path_training_dataset_output": "../datas/xpo_sample/xpo_sample_example",
+    "stid": "single_task_xpo_sample",
+    "n_processor": 10,
+    "n_save": 10,
+    "n_retry": 3,
+    "flag_force": true,
+    "flag_ignore_fail": false,
+    "verbose": 2
+}

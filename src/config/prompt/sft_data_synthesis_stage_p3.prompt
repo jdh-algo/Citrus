@@ -1,0 +1,12 @@
+Base on previous information,please give a judgement on the previous thinking process. 
+You need to judge whether all the possible diagnoses are discussed in logical reasoning process and as a doctor, you can make the final diagnosis based on previous thinking context.
+If your answer is yes, output 1 otherwise 0.
+Your previous thought process:
+<Previous Thought>
+{previous_thought}
+</Previous Thought>
+You MUST write down your answer in the following format:            
+<Rating>
+[Insert 0 or 1 here only.]
+</Rating>
+Your judgement:

@@ -1,0 +1,15 @@
+{
+    "mode": "single_model_evaluation",
+    "task_name": "single_model_evaluation",
+    "l_data": ["medqa"],
+    "stid": "single_task_evaluation",
+    "n_processor": 100,
+    "n_save": 100,
+    "n_retry": 3,
+    "flag_force": true,
+    "flag_ignore_fail": false,
+    "extra_params": {
+        "model_eval": "citrus"
+    },
+    "verbose": 1
+}

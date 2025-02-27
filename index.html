@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Citrus</title>
+  <link rel="icon" type="image/x-icon" href="./static/images/JoyType.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <style>
+        table {
+          width: auto; /* 设置表格宽度为75% */
+          margin-left: auto; /* 自动左边距 */
+          margin-right: auto; /* 自动右边距 */
+          border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* 只在标题行的上下加水平线 */
+        thead {
+            border-top: 2px solid black; /* 第一行上方 */
+            border-bottom: 2px solid black; /* 第一行下方 */
+        }
+        /* 最后一行下方加水平线 */
+        tbody tr:last-child {
+            border-bottom: 2px solid black; /* 最后一行下方 */
+        }
+        /* 其他行不加水平线 */
+        tbody tr {
+            border-bottom: none;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+#nav-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+#project-nav-container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.home-link {
+  margin-right: 10px;
+}
+
+.house-icon {
+  fill: #333;
+  transition: fill 0.3s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.house-icon:hover {
+  fill: #0366d6;
+}
+.select-wrapper::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #333;
+}
+.select-wrapper {
+  position: relative;
+  margin-left: 10px;
+}
+.video-carousel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.video-wrapper {
+  flex: 0 0 33.33%;
+  padding: 0 10px;
+}
+.video-wrapper2 {
+  flex: 0 0 33.33%;
+  padding: 0 10px;
+}
+video {
+  width: 100%;
+}
+
+
+button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+#project-nav {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  padding: 5px 30px 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 800px; /* 根据需要调整 */
+  margin: 0 auto;
+}
+
+.video-container {
+  width: 100%;
+  overflow: hidden;
+  /* 其他视频容器样式 */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* 调整按钮与视频之间的距离 */
+}
+.home-link {
+  margin-top: 10px; /* 向下移动 */
+  margin-left: 60px; /* 向右移动 */
+}
+
+.prev-btn, .next-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #e0e0e0;
+}
+/* .carousel-container {
+  width: 135%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+} */
+.carousel-container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0; /* 添加上下内边距 */
+  box-sizing: border-box;
+  text-align: center; /* 使内部内联元素居中 */
+}
+.video-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.video-container2 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* 确保视频容器宽度与图片容器一致 */
+.video-wrapper-0 {
+  flex: 0 0 100%; /* 与图片容器宽度一致 */
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0 auto; /* 居中显示 */
+}
+
+/* 确保视频自适应宽度 */
+.video-wrapper-0 video {
+  width: 100%; /* 视频自适应容器宽度 */
+  height: auto; /* 保持纵横比 */
+}
+
+
+
+.video-wrapper {
+  flex: 0 0 33.333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.video-wrapper2 {
+  flex: 0 0 33.333%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.prev-btn, .next-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.video-wrapper {
+    display: none;
+  }
+  .video-wrapper2{
+    display: none;
+  }
+  .video-wrapper.active {
+    display: inline-block;
+  }
+  .video-wrapper2.active {
+    display: inline-block;
+  }
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .video-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.prev-btn:hover, .next-btn:hover {
+  background-color: #e0e0e0;
+}
+.video-container {
+  display: flex;
+  justify-content: center; /* 或 flex-start, flex-end 等，根据需要调整 */
+  align-items: center;
+}
+.video-container2 {
+  display: flex;
+  justify-content: center; /* 或 flex-start, flex-end 等，根据需要调整 */
+  align-items: center;
+}
+
+.demo-video {
+  width: 8%;
+  min-width: 1100px;
+  max-width: 1400px;
+}
+.video-wrapper2 {
+    display: none;
+  }
+
+
+  .video-wrapper2 {
+    display: none;
+  }
+  .video-wrapper2.active {
+    display: inline-block;
+  }
+  .video-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  </style>
+</head>
+
+<body>
+
+  <div id="nav-wrapper">
+    <div id="project-nav-container">
+      <a href="https://github.com/jdh-algo" title="GitHub主页" class="home-link">
+        <svg class="house-icon" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+      </a>
+      <div class="select-wrapper">
+        <select id="project-nav" onchange="location = this.value;">
+          <option value="">More Research</option>
+          <option value="https://jdh-algo.github.io/Citrus/">Citrus</option>
+          <!-- <option value="https://jdh-algo.github.io/JoyType/">JoyType</option> -->
+          <!-- <option value="https://jdh-algo.github.io/JoyVASA/">JoyVASA</option> -->
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-3 publication-title">Citrus: Leveraging Expert Cognitive Pathways in a Medical Language Model for Advanced Medical Decision Support</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a target="_blank">Guoxin Wang</a><sup>1*</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Minyu Gao</a><sup>1</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Shuai Yang</a><sup>1</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Ya Zhang</a><sup>1</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Lizhi He</a><sup>1</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Liang Huang</a><sup>1</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Hanlin Xiao</a><sup>1†</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Yexuan Zhang</a><sup>1</sup>,</span>&#20;
+                <span class="author-block">
+                  <a target="_blank">Wanyue Li</a><sup>1</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Lu Chen</a><sup>1</sup>,</span>&#20;
+                <span class="author-block">
+                  <a target="_blank">Jintao Fei</a><sup>1</sup>,</span>&#20;
+              <span class="author-block">
+                <a target="_blank">Xin Li</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <sup>1</sup> <span class="author-block">Citrus Team, JD Health International Inc</span> &nbsp;&nbsp;<br>
+              <sup>*</sup> <span class="author-block">Project Lead</span> &nbsp;&nbsp;<br>
+              <sup>†</sup> <span class="author-block">Work done during the internship at Citrus Team.</span> &nbsp;&nbsp;
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2502.18274" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2502.18274" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/jdh-algo/Citrus" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- huggingface model Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/jdh-algo/Citrus1.0-llama-70B" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="./static/images/artificial-intelligence.png">
+                    </span>
+                    <span>Model</span>
+                  </a>
+                </span>
+
+                <!-- huggingface model Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/jdh-algo/Citrus_S3" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="./static/images/database.png">
+                    </span>
+                    <span>Medical Reasoning Data</span>
+                  </a>
+                </span>
+
+                <!-- huggingface model Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/jdh-algo/JMED" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="./static/images/database.png">
+                    </span>
+                    <span>Evaluation Data</span>
+                  </a>
+                </span>
+
+                <!-- huggingface demo Link
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/jdh-algo/JoyHallo" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="./static/images/hf-logo.png">
+                    </span>
+                    <span>Gradio</span>
+                  </a>
+                </span> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    </div>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" style="text-align: left;" >Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Large language models (LLMs), particularly those with reasoning capabilities, have rapidly advanced in recent years, demonstrating significant potential across a wide range of applications. However, their deployment in healthcare, especially in disease reasoning tasks, is hindered by the challenge of acquiring expert-level cognitive data. In this paper, we introduce Citrus, a medical language model that bridges the gap between clinical expertise and AI reasoning by emulating the cognitive processes of medical experts. The model is trained on a large corpus of simulated expert disease reasoning data, synthesized using a novel approach that accurately captures the decision-making pathways of clinicians. This approach enables Citrus to better simulate the complex reasoning processes involved in diagnosing and treating medical conditions.To further address the lack of publicly available datasets for medical reasoning tasks, we release the last-stage training data, including a custom-built medical diagnostic dialogue dataset. This open-source contribution aims to support further research and development in the field. Evaluations using authoritative benchmarks such as MedQA, covering tasks in medical reasoning and language understanding, show that Citrus achieves superior performance compared to other models of similar size. These results highlight Citrus’s potential to significantly enhance medical decision support systems, providing a more accurate and efficient tool for clinical decision-making.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+  
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    </div>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" style="text-align: left;" >Contributions</h2>
+          <div class="content has-text-justified">
+            <p>
+              1. We propose a training-free reasoning approach that emulates the cognitive processes of medical experts, enabling large language models to enhance their medical capabilities in clinical diagnosis and treatment.
+            </p>
+            <p>
+              2. In conjunction with the data construction method, we introduce a multi-stage post-training approach to further improve the model’s medical performance.
+            </p>
+            <p>
+              3. We have made the Citrus model and its training data publicly available as open-source resources to advance research in AI-driven medical decision-making.
+            </p>
+            <p>
+              4. We have developed and open-sourced a large-scale, updatable clinical practice evaluation dataset based on real-world data, accurately reflecting the distribution of patients in real-world settings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper Method -->
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-4" style="text-align: left;">Method</h2> -->
+          
+          <!-- <h3 class="title is-5" style="text-align: left;">模型训练的主要细节</h3> -->
+          <!-- <div class="content has-text-justified">
+            <p>
+              模型训练的主要细节
+            </p>
+          </div> -->
+          
+          <br>
+          <img src="./static/images/雷达图.png" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
+          
+          <div class="content has-text-justified">
+            <p>
+              <!-- continue -->
+            </p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" style="text-align: left;">Model Access</h2>
+          <div class="content has-text-justified">
+            <table>
+              <thead>
+                <tr>
+                  <th>Model Name</th>
+                  <th>Backbone</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- First Method -->
+                <tr>
+                  <td>Citrus1.0-llama-70B</td>
+                  <td>llama-70B</td>
+                  <td><a href="https://huggingface.co/jdh-algo/Citrus1.0-llama-70B" target="_blank">Model Link</a></td>
+                </tr>
+                <!-- Second Method -->
+                <tr>
+                  <td>Citrus1.0-Qwen-72B</td>
+                  <td>Qwen-72B</td>
+                  <td><a href="" target="_blank">to be continue</a></td>
+                </tr>
+            </table>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              <!-- continue -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" style="text-align: left;">Data Access</h2>
+          <div class="content has-text-justified">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dataset</th>
+                  <th>Dataset Usage</th>
+                  <th>Dataset Description</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Citrus_S3</td>
+                  <td>Train Data</td>
+                  <td>A portion of the training data for the model includes 20k data points.</td>
+                  <td><a href="https://huggingface.co/datasets/jdh-algo/Citrus_S3" target="_blank">Data Link</a></td>
+                </tr>
+                <tr>
+                  <td>JMED</td>
+                  <td>Test Data</td>
+                  <td>The dataset originates from anonymized doctor-patient dialogues at JD Health Internet Hospital, filtered to retain consultations adhering to standardized diagnostic workflows. The initial release contains 1,000 high-quality clinical records spanning all age groups (0-90 years) and multiple specialties.</td>
+                  <td><a href="https://example.com/data-link" target="_blank">Data Link</a></td>
+                </tr>
+                <!-- 可以在这里添加更多数据描述信息 -->
+              </tbody>
+            </table>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              <!-- continue -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Paper Method -->
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" style="text-align: left;">Method</h2>
+          
+          <h3 class="title is-5" style="text-align: left;">1.  Main approaches</h3>
+          <div class="content has-text-justified">
+            <p>
+              LLMs preforms similar cognitive pathways as medical experts.CPT enabled LLMs to learn medical knowledge and perform pattern recognition as doctors do, meanwhile LLMs are capable to handle hypothetical-deductive reasoning by executing several specific reasoning steps, which can be trained through SFT and RL procedure
+            </p>
+          </div>
+          
+          <br>
+          <img src="./static/images/figure4-1-2.png" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
+          
+          <br>
+          <h3 class="title is-5" style="text-align: left;">2.  Overview of training stages and training data pipeline</h3>
+          <div class="content has-text-justified">
+            <p>
+              The training process consists of three stages: CPT, SFT, and RL. We shows training purposes and dataset scale on each stage, also, we points out the data pipeline in corresponding stage
+            </p>
+          </div>
+          
+          <br>
+          <img src="./static/images/figure4-2-1.png" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper Results -->
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" style="text-align: left;">Results</h2>
+          
+          <h3 class="title is-5" style="text-align: left;">1.  Main Results on Medical Benchmarks</h3>
+          <div class="content has-text-justified">
+            <p>
+              <!-- 主要结果 -->
+            </p>
+          </div>
+          
+          <br>
+          <img src="./static/images/main_results.png" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
+          
+          <br>
+          <h3 class="title is-5" style="text-align: left;">2. The experiments on Citrus1.0-Llama-70B</h3>
+          <div class="content has-text-justified">
+            <p>
+              <!-- The SFT stage results and RL stage results are shown in sequence to show different contributions to final perform of model from different stages. We also implemented several experiments to reveal the impact from data size and data portion. "w/o" and "w/" denote "without" and "with". Bold highlights the best scores in each segment.Use MedQA benchmark to evaluate the influence on different training stages and data sizes. -->
+            </p>
+          </div>
+          
+          <br>
+          <img src="./static/images/Abalation_studies.png" style="display: block; margin: 0 auto; width: 100%; max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Paper Method -->
+
+
+
+  
+  <!-- Paper Experiment -->
+  <section class="section" style="margin-bottom: 10px; padding: 5px;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        </div>
+      </div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- <br> -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      </div>
+    </div>
+
+  <!-- BibTex citation -->
+  <!-- <section class="section" id="BibTeX" style="margin-bottom: 10px; padding: 5px;"> -->
+<section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+  <div class="columns is-centered ">
+    <div class="column is-four-fifths">
+      <h2 class="title is-4" >BibTeX</h2> 
+      <!-- <div class="content has-text-justified"> -->
+        <pre class="has-text-justified" style="margin-bottom: 5px; margin-top: 5px; padding: 5px;">
+        <code>
+@misc{wang2025citrus,
+    title={Citrus: Leveraging Expert Cognitive Pathways in a Medical Language Model for Advanced Medical Decision Support}, 
+    author={Guoxin Wang and Minyu Gao and Shuai Yang and Ya Zhang and Lizhi He and Liang Huang and Hanlin Xiao and Yexuan Zhang and Wanyue Li and Lu Chen and Jintao Fei and Xin Li},
+    year={2025},
+    eprint={2502.18274},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2502.18274}, }
+            </code>
+          </pre>
+        </div>
+      </div>
+  </div>
+</section> 
+  <!--End BibTex citation
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+
+<script>
+ const videoWrappers = document.querySelectorAll('.video-wrapper2');
+  let currentIndex = 0;
+  const videosToShow = 3;
+
+  function updateVideos() {
+    videoWrappers.forEach((video, index) => {
+      video.classList.remove('active');
+      if (index >= currentIndex && index < currentIndex + videosToShow) {
+        video.classList.add('active');
+      }
+    });
+  }
+
+  document.querySelector('.prev-btn').addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : videoWrappers.length - videosToShow;
+    updateVideos();
+  });
+
+  document.querySelector('.next-btn').addEventListener('click', () => {
+    currentIndex = (currentIndex < videoWrappers.length - videosToShow) ? currentIndex + 1 : 0;
+    updateVideos();
+  });
+
+  updateVideos();
+
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+You are tasked with addressing a medical examination question. Please carefully read the question, provide a detailed thought process, and then present your final answer.
+
+Here is the question:
+<Question>
+{Q}
+</Question>
+
+Facing on the previous question, you are an assistant that engages in extremely thorough, self-questioning reasoning. 
+Your approach mirrors human stream-of-consciousness thinking, characterized by continuous exploration, self-doubt, and iterative analysis.
+With the expectation that when facing this medical issue, you will be able to apply professional medical reasoning methods, such as differential diagnosis, to further reason and think about the problem.”
+
+Below is the definition of the differential diagnosis method in medical reasoning:
+Differential diagnosis refers to the process of systematically considering different possible diseases, ruling out diagnoses that do not match the condition, and ultimately determining the most likely disease. It involves the following steps:
+• Collecting information: Inquire about the medical history, conduct physical exams, and perform necessary laboratory tests.
+• Listing possible diagnoses: Based on the medical history, signs, symptoms, and laboratory results, list all possible diseases.
+• Gradually eliminating: Through further tests, symptom evaluations, and diagnostic tests, gradually eliminate impossible diagnoses, ultimately confirming the most likely disease.
+Differential diagnosis is a process of comparison and contrast, where doctors judge each potential diagnosis based on its characteristics, finding the disease that most closely matches the patient’s symptoms and signs.
+
+Please establish the following process in your logical reasoning:
+	1.	List all the known information in the problem, including the complete medical history and all test results.
+	2.	List possible diagnoses.
+	3.	Attempt to build a logical reasoning process.
+
+Below are the reasoning requirements; please ensure each step of the reasoning process meets the following criteria:
+1. EXPLORATION OVER CONCLUSION
+- Never rush to conclusions
+- Keep exploring until a solution emerges naturally from the evidence
+- If uncertain, continue reasoning indefinitely
+- Question every assumption and inference\n
+2. DEPTH OF REASONING
+- Engage in extensive contemplation
+- Express thoughts in natural, conversational internal monologue
+- Break down complex thoughts into simple, atomic steps
+- Embrace uncertainty and revision of previous thoughts\n
+3. THINKING PROCESS
+- Use short, simple sentences that mirror natural thought patterns
+- Express uncertainty and internal debate freely
+- Show work-in-progress thinking
+- Acknowledge and explore dead ends
+- Frequently backtrack and revise\n
+4. PERSISTENCE
+- Value thorough exploration over quick resolution\n
+            
+Your reasoning steps should follow these requirements:          
+<Reasoning>
+[Your extensive internal monologue goes here]
+- Begin with small, foundational observations
+- Question each step thoroughly
+- Show natural thought progression
+- Express doubts and uncertainties
+- Revise and backtrack if you need to
+- Continue until natural resolution
+</Reasoning>\n
+Please review the question again:
+<Question>
+{Q}
+</Question>
+Please review the output format requirements again; your reasoning steps should be formatted as:
+<Reasoning>
+[Insert your reasoning step here.]
+</Reasoning>            
+Please follow this output format for the next valid and useful reasoning step:

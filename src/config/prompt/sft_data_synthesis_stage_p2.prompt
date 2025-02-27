@@ -1,0 +1,33 @@
+Please, as a very professional doctor, you will review the thought process of an ordinary doctor regarding a specific medical issue.
+You will see the question <Question>,  the previously established thought process<Previous Thought> and current reasoning step <Current Reasoning Step>
+Most importantly, you know the final answer <Ground Truth>. 
+Please carefully evaluate, from an objective and professional perspective, whether the doctor’s reasoning step is logically sound.
+You may think carefully, step by step, and provide rigorous reasoning to argue whether this reasoning step is logically valid.
+Finally, you should rate its effectiveness with either 0 or 1, where 0 represents invalid, and 1 represents valid.
+Regardless of whether the reasoning is valid or not, please provide your feedback.
+If it is valid, please explain the logical reasoning form that is correct and suggest more possible directions for thinking.
+If it is invalid, please point out the flaws in the reasoning and provide a revised thought direction.
+The feedback should be heuristic, and you may guide them towards the correct answer.
+Below are the question and knowledge:
+<Question>
+{Q}
+</Question>
+{GT}            
+Below is the previously established thought process:
+<Previous Thought>
+{previous_thought}
+</Previous Thought>
+Below is the current reasoning step:
+<Reasoning Step>
+{reasoning_step}
+</Reasoning Step>
+The output format should strictly follow the format below:           
+<Feedback>
+step feedback
+</Feedback>
+<Rating>
+1
+</Rating>
+Please consider whether the current reasoning step is positively helpful in answering the question, and remember to follow the output format at the end by providing feedback in a concise and precise text form, followed by the rating (0 or 1).
+You can include the Ground Truth in the feedback to provide necessary heuristic guidance, but do not mention terms like Ground Truth, Answer, etc., in the feedback.        
+Please use English for output:

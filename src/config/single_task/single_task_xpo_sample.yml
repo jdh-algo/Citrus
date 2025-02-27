@@ -1,0 +1,26 @@
+stid: "single_task_xpo_sample"
+single_task_class: "SingleTaskXpoSample"
+sample_num_stage_d1: 10
+
+nodes:
+- nid: "node_one_prompt_xpo_sample_stage_d1"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "citrus"
+  prompt: "xpo_sample_stage_d1.prompt"
+  prefix: "xpo_sample_stage_d1.prefix"
+- nid: "node_one_prompt_xpo_sample_stage_d2"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "xpo_sample_stage_d2.prompt"
+- nid: "node_one_prompt_xpo_sample_stage_d4"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "xpo_sample_stage_d4.prompt"
+- nid: "node_one_prompt_xpo_sample_stage_d5"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "xpo_sample_stage_d5.prompt"

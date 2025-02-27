@@ -1,0 +1,8 @@
+stid: "single_task_base"
+single_task_class: "SingleTaskBase"
+
+nodes:
+- nid: "node_base_1"
+  node_class: "NodeBase"
+  retry_num: 1
+  prompt: "node test"

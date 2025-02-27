@@ -1,0 +1,25 @@
+stid: "single_task_sft_data_synthesis"
+single_task_class: "SingleTaskSftDataSynthesis"
+num_loop: 2
+
+nodes:
+- nid: "node_one_prompt_sft_data_synthesis_stage_p1"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "sft_data_synthesis_stage_p1.prompt"
+- nid: "node_one_prompt_sft_data_synthesis_stage_p2"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "sft_data_synthesis_stage_p2.prompt"
+- nid: "node_one_prompt_sft_data_synthesis_stage_p3"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "sft_data_synthesis_stage_p3.prompt"
+- nid: "node_one_prompt_sft_data_synthesis_stage_p4"
+  node_class: "NodeOnePrompt"
+  retry_num: 1
+  model: "gpt-4o"
+  prompt: "sft_data_synthesis_stage_p4.prompt"
