@@ -36,7 +36,7 @@ Citrus1.0-Llama-70B reach a top class performance on 70B scale models, especiall
 |                        | Backbone       | Supported Languages | Link                                                                  |
 | -----------------------| ------------   | ----- | --------------------------------------------------------------------- |
 | **Citrus1.0-Llama-70B**   | LLaMA-3.1-70B  | English    | [HF Link](https://huggingface.co/jdh-algo/Citrus1.0-llama-70B)|
-| **Citrus1.0-Qwen-72B** | Qwen2.5-72B    | English & Chinese | [to be continue]()|
+| **Citrus1.0-Qwen-72B** | Qwen2.5-72B    | English & Chinese | [HF Link](https://huggingface.co/jdh-algo/Citrus1.0-Qwen-72B)|
 
 ## Data Access
 
